@@ -1,5 +1,7 @@
 .personagem:hover {
     -webkit-transform: scale(1.1);
+    background-color: rgb(37, 35, 35);
+    color: white;
 }
 img{
     width: 200px;
