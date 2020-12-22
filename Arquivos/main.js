@@ -14,13 +14,16 @@ const marvel = {
                     let urlHero = hero.urls[0].url;
                     contentHTML += `
                     <div class="personagem">
-                        <a href="${urlHero}" target="_blank">
+                        <a class="infoh" href="${urlHero}" target="_blank">
                             <img src="${hero.thumbnail.path}.${hero.thumbnail.extension}" alt="${hero.name}" class="img">
                         </a>
-                        <h3 class="title">${hero.name}</h3>
-                        <h4 class"data"> Data de modificação</h4>
-                        <h4 class="dat">${hero.modified}</h4>
-                     </div>`;
+                
+                        <div>
+                            <h3 class="title">${hero.name}</h3>
+                            <div class="data"><h4>Data de modificação</h4></div>
+                            <div class="dat"><h4>${hero.modified}</h4></div>
+                        </div>
+                    </div>`;
                 }
 
                 container.innerHTML= contentHTML;
